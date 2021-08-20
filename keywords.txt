@@ -1,8 +1,0 @@
-    
-PCA9554	KEYWORD1
-pinMode	KEYWORD2
-portMode KEYWORD2
-digitalRead	KEYWORD2
-digitalWrite KEYWORD2
-digitalWritePort KEYWORD2
-digitalReadPort KEYWORD2
