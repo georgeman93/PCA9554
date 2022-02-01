@@ -98,15 +98,16 @@ bool PCA9554::digitalWritePort(byte value)
 
 
 
-bool PCA9554::digitalRead(byte &pinNumber)
+bool PCA9554::digitalRead(byte pinNumber) // changed &pin number implementation (compiler errors and non intuitive usage)
 {
 	byte oldValue = INPUTPORT;
 	if(this->twiRead(oldValue) && (pinNumber <= 7))
 	{
 		oldValue &= (1 << pinNumber);
-		if(oldValue > 0) pinNumber = 1;
-		else pinNumber = 0;
-		return true;
+		if(oldValue > 0) 
+			return true;
+		else 
+			return false;
 	}
 	return false;
 }
