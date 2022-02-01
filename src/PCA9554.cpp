@@ -14,7 +14,7 @@ bool PCA9554::twiRead(byte &registerAddress)
   	if(Wire.endTransmission() == 0)
   	{
     		delay(15);
-    		Wire.requestFrom(_SlaveAddress, 1, true);
+    		Wire.requestFrom((uint16_t)_SlaveAddress, (uint8_t)1, (bool)true);
     		while(Wire.available() < 1);
     		registerAddress = Wire.read();
     		return true;
