@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tinyu-Zhao/PCA9554"
+    "url": "https://github.com/georgeman93/PCA9554"
   },
   "version": "0.0.1",
   "framework": "arduino",
