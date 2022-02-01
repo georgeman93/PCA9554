@@ -38,7 +38,7 @@ class PCA9554
 		bool digitalWrite(byte pinNumber, bool state);
 		bool digitalWritePort(byte value);
 				
-		bool digitalRead(byte &pinNumber);
+		bool digitalRead(byte pinNumber); // changed &pin number implementation (compiler errors and non intuitive usage)
 		bool digitalReadPort(byte &value);
 		
 	private :
